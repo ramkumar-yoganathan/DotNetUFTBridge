@@ -1,6 +1,3 @@
-'''<summary>This class provides common action related Dot Net Call</summary>
-'''<author>Ramkumar Yoganathan </author>
-'''<date>03-Nov-2017</date>
 Class DotNetBridge
     'Variable declaration
     Private objCodeProvider
@@ -27,9 +24,6 @@ Class DotNetBridge
 	'''
 	'''<returns type="Object">Factory Instance of Compiler. (In this case)</returns>
 	''' 
-	'''<author>Ramkumar</author>
-	''' 
-	'''<datecreated>11/3/2017</datecreated>
 	''' 
 	'''<modification>
 	'''		
@@ -55,11 +49,6 @@ Class DotNetBridge
 	'''<param name="None" type="None"></param>
 	'''
 	'''<returns type="None">None</returns>
-	''' 
-	'''<author>Ramkumar</author>
-	''' 
-	'''<datecreated>11/3/2017</datecreated>
-	''' 
 	'''<modification>
 	'''		
 	'''</modification>
@@ -81,11 +70,7 @@ Class DotNetBridge
 	'''</summary>
 	'''<param name="" type=""></param>
 	'''
-	'''<returns type="String">Source code of the flow action configured in the Flow xml file.</returns>
-	''' 
-	'''<author>Ramkumar</author>
-	''' 
-	'''<datecreated>11/3/2017</datecreated>
+	'''<returns type="String">Source code .</returns>
 	''' 
 	'''<modification>
 	'''		
@@ -103,16 +88,12 @@ Class DotNetBridge
         Set fileInstance = Nothing
         GetSourceCode = strSourceContent
     End Function
-	'''<summary>
-	'''		Routine to get the compiled assembly reference of the dot net action source code which was configured 
-	'''		in the flow xml file.
+	'''<summar
+	'''Routine to get the compiled assembly reference of the dot net action source code which was supplied 
+	'''		
 	'''</summary>
 		'''
 	'''<returns type="Object">Compiled assembly of the .</returns>
-	''' 
-	'''<author>Ramkumar</author>
-	''' 
-	'''<datecreated>11/3/2017</datecreated>
 	''' 
 	'''<modification>
 	'''		
