@@ -1,3 +1,4 @@
+```c#
 Class DotNetBridge
     'Variable declaration
     Private objCodeProvider
@@ -145,3 +146,4 @@ End Class
 Public BridgeCore
 
 Set BridgeCore = New DotNetBridge
+```
