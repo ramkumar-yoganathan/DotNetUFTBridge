@@ -18,18 +18,6 @@ Class DotNetBridge
         Set objCodeProvider = GetFactory("Microsoft.CSharp.CSharpCodeProvider")
         Set objCompilerParams = GetFactory("System.CodeDom.Compiler.CompilerParameters")
     End Sub
-	'''<summary>
-	'''		Routine to get the instance of the DotNetFactory
-	'''</summary>
-	'''<param name="InstanceString" type="String">Name of the instance which you want create.</param>
-	'''
-	'''<returns type="Object">Factory Instance of Compiler. (In this case)</returns>
-	''' 
-	''' 
-	'''<modification>
-	'''		
-	'''</modification>
-	'''    
     Private Function GetFactory(ByVal InstanceString)
     	'Variable declaration
         Dim objDotNetFactory
@@ -43,17 +31,6 @@ Class DotNetBridge
             Set GetFactory = Null
         End If
     End Function    
-	'''<summary>
-	'''		Routine to set the compiler configuration. Include the third party assemblies, if in case
-	'''		you are extending this class to further with the assembly.
-	'''</summary>
-	'''<param name="None" type="None"></param>
-	'''
-	'''<returns type="None">None</returns>
-	'''<modification>
-	'''		
-	'''</modification>
-	'''        
     Private Sub SetCompiler()
     	'Define Compiler Preference
         objCompilerParams.GenerateInMemory = True
@@ -65,18 +42,6 @@ Class DotNetBridge
         'Include third party assembly.
         'CopyAssemblyForCompilation()
     End Sub
-	'''<summary>
-	'''		Routine to set the compiler configuration. Include the third party assemblies, if in case
-	'''		you are extending this class to further with the assembly.
-	'''</summary>
-	'''<param name="" type=""></param>
-	'''
-	'''<returns type="String">Source code .</returns>
-	''' 
-	'''<modification>
-	'''		
-	'''</modification>
-	'''            
     Private Function GetSourceCode()
     	'Variable declaration
     	Const FOR_READING = 1
@@ -89,17 +54,6 @@ Class DotNetBridge
         Set fileInstance = Nothing
         GetSourceCode = strSourceContent
     End Function
-	'''<summar
-	'''Routine to get the compiled assembly reference of the dot net action source code which was supplied 
-	'''		
-	'''</summary>
-		'''
-	'''<returns type="Object">Compiled assembly of the .</returns>
-	''' 
-	'''<modification>
-	'''		
-	'''</modification>
-	'''
     Public Function GetCompiledAssembly()
     	'Variable declaration
         Dim objCompilerOutput
