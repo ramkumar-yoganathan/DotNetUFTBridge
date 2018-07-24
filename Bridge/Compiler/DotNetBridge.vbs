@@ -3,8 +3,6 @@ Class DotNetBridge
     'Variable declaration
     Private objCodeProvider
     Private objCompilerParams
-	Private strFlowMapFile
-	Private objFlowMap
 	Private strClassSource
 	'Define the dot net source outside of the class. i.e from your test
 	Public Property Let DotNetSource(ByVal ClassSource)
